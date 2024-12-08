@@ -10,7 +10,7 @@ La app muestra un formulario arriba que permite añadir un estudiante con su not
 
 El formulario evitará que se envíe vacío o que se añadan dos notas para un mismo estudiante.
 
-*La app se encuentra en el archivo App.tsx.*
+*La app se encuentra en el archivo "App.tsx". Para usar la página ejecutar 'npm run dev'*
 
 Se ha utilizado Water.css en el archivo index.css para simplificar el estilo, y luego se han realizado ajustes manuales en el archivo App.css. Toda la app está centrada y se usa flex para un diseño responsive.
 

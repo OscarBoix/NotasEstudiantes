@@ -38,7 +38,7 @@ type NotaEstudiante = {
 
 ### Formulario
 El header es el que tiene el formulario para agregar estudiantes y sus notas.
-En realidad, no se usa form, si no que hay inputs que usan el hook useState para almacenar los datos.
+En realidad, no se usa form, sino que hay inputs que usan el hook useState para almacenar los datos.
 
 Como se ha explicado arriba, los inputs tienen reglas:
 - El campo de nombre, apellido o nota no puede estar vacio al enviar el formulario

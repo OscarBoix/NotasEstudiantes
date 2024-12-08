@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-bottom: 0;
+  }
+  
+  button {
+    margin-top: 0;
+  }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    vertical-align: middle 
+}
+
+tr td button{
+  margin: auto;
+}

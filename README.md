@@ -6,11 +6,11 @@ Se ha usado ESLint como linter.
 
 ## App
 
-La app muestra un formulario arriba que permite añadir un estudiante con su nota. Cuando se agrega, en una tabla se muestra la fila con el nombre y apellido, la nota y un botón para eliminar la entrada. Por último, también se muestra el promedio de todas las notas encima de la tabla. 
+La app muestra un formulario que permite añadir el nombre y apellidos de un estudiante y su nota. Cuando se agrega, en la tabla se añade la fila con la información del estudiante, la nota y un botón para eliminar la entrada. Por último, encima de la tabla se puede encontrar el promedio de las notas de todos los estudiantes en la tabla. 
 
-El formulario evitará que se envíe vacío o que se añadan dos notas para un mismo estudiante.
+El formulario evitará que se envíe vacío o que se añadan dos notas para un mismo estudiante y los inputs del formulario tienen reglas para que solamente se envíe el tipo de información requerida.
 
-*La app se encuentra en el archivo "App.tsx". Para usar la página ejecutar 'npm run dev'*
+*La app se encuentra en el archivo "App.tsx". Para usar la página ejecutar 'npm run dev'*.
 
 Se ha utilizado Water.css en el archivo index.css para simplificar el estilo, y luego se han realizado ajustes manuales en el archivo App.css. Toda la app está centrada y se usa flex para un diseño responsive.
 
@@ -38,9 +38,14 @@ type NotaEstudiante = {
 
 ### Formulario
 El header es el que tiene el formulario para agregar estudiantes y sus notas.
-En realidad, no se usa form, si no que  hay inputs y se usa el hook useState para almacenar la información de los inputs y recoge el valor de los useState cuando quiere agregar una nueva nota a a la lista. 
+En realidad, no se usa form, si no que hay inputs que usan el hook useState para almacenar los datos.
 
-La lista también está hecha usando un useState, pero de una lista de NotaEstudiante que es el type que se ha creado para manejar las notas.
+Como se ha explicado arriba, los inputs tienen reglas:
+- El campo de nombre, apellido o nota no puede estar vacio al enviar el formulario
+- Nombre y Apellido solo aceptan letras y no pueden tener más de 15 caracteres
+- Nota solo acepta números entre 0 y 10 y un punto para añadir hasta 2 decimales
+
+La lista de notas también está hecha usando un useState con una lista del type NotaEstudiante, creado para manejar las notas.
 
 ``` ts
 <div className='page'>
